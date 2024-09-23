@@ -12,7 +12,7 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,c
 
 
 echo Downloading and setting up custom font
-sudo dnf install curl
+sudo dnf install curl wget
 cd ~/Downloads
 wget https://github.com/IdreesInc/Monocraft/releases/download/v4.0/Monocraft-nerd-fonts-patched.ttc
 sleep 10
@@ -28,9 +28,7 @@ flatpak install com.brave.Browser com.discordapp.Discord com.obsproject.Studio m
 
 
 echo Install linux apps
-sudo dnf install i3 i3status dmenu i3lock xbacklight feh conky polybar rofi xrandr arandr dunst btop brightnessctl wget -y
-
-wget https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64
+sudo dnf install i3 i3status dmenu i3lock xbacklight feh conky polybar rofi xrandr arandr dunst btop brightnessctl -y
 
 
 echo Creating a custom dpi 120 is default
