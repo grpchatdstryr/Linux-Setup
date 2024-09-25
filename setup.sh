@@ -4,7 +4,7 @@ echo This is a setup script
 
 
 echo Updating fedora to the latest version
-sudo dnf update
+sudo dnf update -y
 
 
 echo Enabling Minimize Buttom - GNOME
@@ -12,7 +12,7 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,c
 
 
 echo Downloading and setting up custom font
-sudo dnf install curl wget
+sudo dnf install curl wget -y
 cd ~/Downloads
 wget https://github.com/IdreesInc/Monocraft/releases/download/v4.0/Monocraft-nerd-fonts-patched.ttc
 sleep 10
@@ -34,7 +34,7 @@ sudo dnf install i3 i3status dmenu i3lock xbacklight feh conky polybar rofi xran
 echo Creating a custom dpi 120 is default
 echo "Xft.dpi: 120" > ~/.Xresources
 xrdb "-merge" ~/.Xresources
-exec i3
+# exec i3 
 
 
 echo Improving trackpad experience
