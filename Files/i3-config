@@ -249,7 +249,7 @@ bindsym $mod+n exec "sh ~/.scripts/nerd-radar.sh"
 bindsym $mod+Shift+n exec "sh ~/.scripts/rick-roll.sh"
 
 #Set Wallpaper (useful when changing monitors)
-bindsym $mod+m exec "sh ~/Projects/startup.sh"
+bindsym $mod+m exec "sh ~/.scripts/startup.sh"
 
 #Brightness keys
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%

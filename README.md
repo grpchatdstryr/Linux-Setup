@@ -527,11 +527,16 @@ cd ~ # Download it to your home directory for the script to work
 git clone https://github.com/grpchatdstryr/Linux-Setup.git
 ```
 
-Once downloaded, you should be able to run the install script which configures everything all at once. 
+Make the script executable: 
 
 ``` bash
 cd Linux-Setup
 chmod +x setup.sh
+```
+
+Run the script!
+
+``` bash
 ./setup.sh
 ```
 

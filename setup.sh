@@ -28,7 +28,7 @@ flatpak install com.brave.Browser com.discordapp.Discord com.obsproject.Studio m
 
 
 echo Install linux apps
-sudo dnf install i3 i3status dmenu i3lock xbacklight feh conky polybar rofi xrandr arandr dunst btop brightnessctl -y
+sudo dnf install i3 i3status dmenu i3lock xbacklight feh conky polybar rofi xrandr arandr dunst btop brightnessctl vim -y
 
 
 echo Creating a custom dpi 120 is default
@@ -73,12 +73,16 @@ cp ~/Linux-Setup/Files/i3-config ~/.config/i3/
 mv ~/.config/i3/i3-config ~/.config/i3/config
 
 
-echo Setting up some fun stuff
+echo Setting up scripts
 mkdir ~/.scripts
 cd ~/.scripts
 echo "xdg-open https://www.youtube.com/watch?v=fMMEM-aGihA" > nerd-radar.sh
 echo "xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ" > rick-roll.sh
-chmod +x nerd-radar.sh rick-roll.sh
+echo '#!/bin/bash' >> startup.sh
+echo feh --bg-fill ~/Pictures/Wallpapers/Wallpaper.png >> startup.sh
+echo bash ~/.config/polybar/launch.sh >> startup.sh
+echo i3-msg restart >> startup.sh
+chmod +x nerd-radar.sh rick-roll.sh startup.sh
 cd ~
 
 
