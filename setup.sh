@@ -38,7 +38,7 @@ xrdb "-merge" ~/.Xresources
 
 
 echo Improving trackpad experience
-cp ~/Linux-Setup/Files/40-libinput.conf /usr/share/X11/xorg.conf.d/
+sudo cp ~/Linux-Setup/Files/40-libinput.conf /usr/share/X11/xorg.conf.d/
 
 
 echo Setting up aliases  
