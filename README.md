@@ -541,6 +541,7 @@ Run the script!
 ```
 
 Hopefully everything works properly! If so, head down to my Shortcuts Guide to learn how to use my setup. 
+*Note: You will be greeted with a black screen. You need to type Mod + M to load the wallpaper and polybar. To open an app, type Mod + P*
 
 
 ## Shortcuts Guide
