@@ -85,6 +85,13 @@ echo i3-msg restart >> startup.sh
 chmod +x nerd-radar.sh rick-roll.sh startup.sh
 cd ~
 
+echo Setting up Sway
+sudo dnf install sway waybar solarr wdisplays grim slurp
+mkdir -p ~/.config/sway ~/.config/waybar
+cp ~/Linux-Setup/Files/Sway/config ~/.config/sway/
+cp ~/Linux-Setup/Files/Sway/config.jsonc ~/.config/waybar/
+cp ~/Linux-Setup/Files/Sway/style.css ~/.config/waybar/
+
 
 echo Finished! for more info, reference the docs
 echo also you may not know how to use my setup, reference the documentation on how to use
