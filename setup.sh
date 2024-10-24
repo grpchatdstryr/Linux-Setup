@@ -78,6 +78,20 @@ cp ~/Linux-Setup/Files/Sway/config ~/.config/sway/
 cp ~/Linux-Setup/Files/Sway/config.jsonc ~/.config/waybar/
 cp ~/Linux-Setup/Files/Sway/style.css ~/.config/waybar/
 
+echo ---- Setting Up Obsidian Directories - Personal Setup ----
+cd ~
+mkdir -p Documents/Obsidian
+cd Documents/Obsidian
+mkdir General-Vault Improvement-Vault School-Vault Technical-Vault Bible-Vault Trash-Bin
+cd ~
+
+echo ---- Setting Up Other Directories ----
+cd Pictures
+mkdir Wallpapers Icons Folder-Icons Screenshots
+mkdir ~/Downloads/Trash
+cd ~/Documents
+mkdir Trash Important
+
 echo Finished! for more info, reference the docs
 echo also you may not know how to use my setup, reference the documentation on how to use
 echo Rebooting in 15 seconds. After it reboots, when you go to log in, click the settings icon in the bottom right corner, and click i3. 
