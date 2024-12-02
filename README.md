@@ -556,7 +556,7 @@ Resize Window  -  Mod + R  (Esc to exit resize mode)
 
 
 ## Sway
-I recently switched to sway. While I enjoyed my i3 experience, I wanted to give it a try. I ended up liking it so much that it is my current windowm manager of choice. Running the install script should also set up sway. Once you restart/logout, you should have to option to select sway. Many of my keybinds for i3 carry over for sway. Whichever window manager you choose, I hope everything goes well. 
+I recently switched to sway. While I enjoyed my i3 experience, I wanted to give it a try. I ended up liking sway so much that it is my current window manager of choice. Running the install script should also set up sway. Once you restart/logout, you should have to option to select sway. Many of my keybinds for i3 carry over for sway. Whichever window manager you choose, I hope everything goes well. 
 
 With that, thanks for checking out my setup guide!
 Enjoy your new setup! 🎉🎉🎉
