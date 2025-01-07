@@ -1,8 +1,10 @@
 #!/bin/bash
 
-echo This is a setup script
+echo _____________________________________
+echo Starting...
+echo
 
-echo Updating fedora to the latest version
+echo Updating Fedora to the latest version
 sudo dnf update -y
 
 echo Enabling Minimize Buttom - GNOME
@@ -72,7 +74,7 @@ chmod +x nerd-radar.sh rick-roll.sh startup.sh
 cd ~
 
 echo Setting up Sway
-sudo dnf install sway waybar wdisplays grim slurp
+sudo dnf install sway waybar wdisplays grim slurp -y
 mkdir -p ~/.config/sway ~/.config/waybar
 cp ~/Linux-Setup/Files/Sway/config ~/.config/sway/
 cp ~/Linux-Setup/Files/Sway/config.jsonc ~/.config/waybar/
@@ -92,10 +94,16 @@ mkdir ~/Downloads/Trash
 cd ~/Documents
 mkdir Trash Important
 
-echo Finished! for more info, reference the docs
-echo also you may not know how to use my setup, reference the documentation on how to use
-echo Rebooting in 15 seconds. After it reboots, when you go to log in, click the settings icon in the bottom right corner, and click i3. 
+echo
+echo
+echo ___________________________________________________________________________
+echo Finished! Check out the docs for more information.
+echo . . . . . . . . . . . . . . . . . . . . . . . . . .
+echo Rebooting in 15 seconds. 
+echo After reboot, click the settings icon in the bottom right corner, then click i3/sway. 
 sleep 15
+echo ___________________________________________________________________________
 
-echo Rebooting
+echo Rebooting Now...
+sleep 2
 reboot
